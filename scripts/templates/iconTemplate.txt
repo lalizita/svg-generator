@@ -1,0 +1,42 @@
+<template>
+  <svg
+    class="transition-colors duration-300 in-out <%=componentName%>-icon"
+    :width="width"
+    :height="height"
+    viewBox="<%= viewBox %>"
+    :aria-labelledby="<%=componentName%>"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <!-- eslint-disable -->
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="<%= pathData %>"
+      :fill="color"
+    />
+  </svg>
+</template>
+
+<script>
+export default {
+  name: '<%=componentName%>',
+  props: {
+    iconName: {
+      type: String,
+      default: 'box',
+    },
+    width: {
+      type: [Number, String],
+      default: 24,
+    },
+    height: {
+      type: [Number, String],
+      default: 24,
+    },
+    color: {
+      type: String,
+      default: '#000000',
+    },
+  },
+};
+</script>

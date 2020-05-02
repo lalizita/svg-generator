@@ -1,0 +1,16 @@
+{
+  "name": "svg-generator",
+  "version": "1.0.0",
+  "description": "a script to generate svg components",
+  "main": "index.js",
+  "scripts": {
+    "generate-icons": "node ./scripts/generateIcon.js ./icons/raw ./icons/generated-icons vue"
+  },
+  "author": "Laís Lima",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "ejs": "^3.1.2",
+    "rimraf": "^3.0.2"
+  }
+}
