@@ -24,3 +24,5 @@ npm run generate-icons
 
 This script execute the generateIcon js file, as second argument you must pass the origin icon files, in the third you must pass the destiny file and fourth you pass the file type that is generated. 
 Vue components is the default template.
+
+Icon made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](www.flaticon.com)
