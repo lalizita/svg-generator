@@ -8,12 +8,7 @@
     xmlns="http://www.w3.org/2000/svg"
   >
     <!-- eslint-disable -->
-    <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="<%= pathData %>"
-      :fill="color"
-    />
+     <%-pathData%>
   </svg>
 </template>
 
@@ -23,7 +18,7 @@ export default {
   props: {
     iconName: {
       type: String,
-      default: 'box',
+      default: '<%=componentName%>',
     },
     width: {
       type: [Number, String],
